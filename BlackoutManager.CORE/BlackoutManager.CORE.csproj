@@ -30,11 +30,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Exceptions\" />
-    <Folder Include="MiddleWare\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\BlackoutManager.DATA\BlackoutManager.DATA.csproj" />
   </ItemGroup>
 

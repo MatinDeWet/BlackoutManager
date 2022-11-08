@@ -1,4 +1,5 @@
 using BlackoutManager.CORE.Extensions;
+using BlackoutManager.CORE.MiddleWare;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,6 +29,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+//addition of custom exception middleware
+app.UseMiddleware<ExceptionMiddleWare>();
 
 app.UseHttpsRedirection();
 
