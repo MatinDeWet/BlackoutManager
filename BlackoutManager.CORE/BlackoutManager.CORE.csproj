@@ -29,4 +29,13 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Exceptions\" />
+    <Folder Include="MiddleWare\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlackoutManager.DATA\BlackoutManager.DATA.csproj" />
+  </ItemGroup>
+
 </Project>
