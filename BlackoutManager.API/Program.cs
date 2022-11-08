@@ -15,7 +15,9 @@ builder.Services.AddApplicationIdentity(builder.Configuration);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+//addition of swagger
+builder.Services.AddApplicationSwagger();
 
 //add cross origin
 builder.Services.AddCors(options =>
