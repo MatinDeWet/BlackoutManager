@@ -1,5 +1,6 @@
 using BlackoutManager.CORE.Extensions;
 using BlackoutManager.CORE.MiddleWare;
+using BlackoutManager.DATA.AutoMapper;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -27,6 +28,8 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", p => p.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
 });
+
+builder.Services.AddAutoMapper(typeof(MapperConfig));
 
 var app = builder.Build();
 

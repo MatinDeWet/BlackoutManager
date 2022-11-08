@@ -31,6 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BlackoutManager.API.SERVICE\BlackoutManager.API.SERVICE.csproj" />
     <ProjectReference Include="..\BlackoutManager.DATA\BlackoutManager.DATA.csproj" />
   </ItemGroup>
 

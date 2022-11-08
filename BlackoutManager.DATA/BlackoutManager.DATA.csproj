@@ -22,9 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="AutoMapper\" />
     <Folder Include="Common\" />
-    <Folder Include="Dtos\" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,6 @@
-﻿using BlackoutManager.DATA.EF;
+﻿using BlackoutManager.API.SERVICE;
+using BlackoutManager.API.SERVICE.Services;
+using BlackoutManager.DATA.EF;
 using BlackoutManager.DATA.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -97,6 +99,7 @@ public static class ApplicationServiceExtensions
 
     public static IServiceCollection AddApplicationServices(this IServiceCollection services)
     {
+        services.AddScoped<IAuthService, AuthService>();
         return services;
     }
 
