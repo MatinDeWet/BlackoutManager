@@ -12,6 +12,9 @@ builder.Services.AddApplicationPostGresContext(builder.Configuration);
 builder.Services.AddApplicationAuthentication(builder.Configuration);
 builder.Services.AddApplicationIdentity(builder.Configuration);
 
+builder.Services.AddApplicationServices();
+builder.Services.AddApplicationRepositories();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

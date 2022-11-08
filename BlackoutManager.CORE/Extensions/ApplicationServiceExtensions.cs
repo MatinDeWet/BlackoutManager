@@ -95,4 +95,14 @@ public static class ApplicationServiceExtensions
         return services;
     }
 
+    public static IServiceCollection AddApplicationServices(this IServiceCollection services)
+    {
+        return services;
+    }
+
+    public static IServiceCollection AddApplicationRepositories(this IServiceCollection services)
+    {
+
+        return services;
+    }
 }
