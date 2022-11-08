@@ -1,8 +1,11 @@
 using BlackoutManager.CORE.Extensions;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+//add SeriLog
+builder.Host.UseSerilog((context, loggerConfiruration) => loggerConfiruration.WriteTo.Console().ReadFrom.Configuration(context.Configuration));
 
 builder.Services.AddApplicationPostGresContext(builder.Configuration);
 
